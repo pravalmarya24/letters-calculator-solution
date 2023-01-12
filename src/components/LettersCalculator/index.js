@@ -18,13 +18,16 @@ class LettersCalculator extends Component {
             <h1 className="main-heading">
               Calculate the <br /> Letters you <br /> enter
             </h1>
-            <lable className="text-lable">Enter the phrase</lable>
+            <label className="text-lable" htmlFor="inputEleId">
+              Enter the phrase
+            </label>
             <br />
             <input
               type="text"
               placeholder="Enter the phrase"
               className="input-element"
               onChange={this.countingCharacters}
+              id="inputEleId"
             />
             <div className="total-char-container">
               <h1 className="count-heading">No. of letters: {count}</h1>
